@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Event Search</string>
+    <string name="search">SEARCH</string>
+    <string name="favourite">FAVOURITE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clear">clear</string>
+
+    <string-array name="resource_category">
+        <item>All</item>
+        <item>Music</item>
+        <item>Sports</item>
+        <item>Arts &amp; Theatre</item>
+        <item>Film</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="resource_miles">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+
+    <string-array name="sort_type">
+        <item>Default</item>
+        <item>Event Name</item>
+        <item>Time</item>
+        <item>Artist</item>
+        <item>Type</item>
+    </string-array>
+
+    <string-array name="sort_sequence">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="searching_event">&#160;Searching Events …</string>
+    <string name="api">http://eventsearchapi.us-west-1.elasticbeanstalk.com/api</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="loading_data">Loading Data...</string>
+</resources>

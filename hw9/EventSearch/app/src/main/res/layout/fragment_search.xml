@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/label_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keyword" />
+
+            <TextView
+                android:id="@+id/label_keyword_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter mandatory field"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/input_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:completionThreshold="3"
+                android:hint="Enter Keyword" />
+
+            <TextView
+                android:id="@+id/label_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category" />
+
+            <Spinner
+                android:id="@+id/spinner_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/label_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance" />
+
+            <EditText
+                android:id="@+id/input_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="10"
+                android:inputType="numberDecimal" />
+
+            <Spinner
+                android:id="@+id/spinner_unit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/label_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_here"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Current location" />
+
+                <RadioButton
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Other. Specify Location" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/label_location_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter mandatory field"
+                android:textColor="@android:color/holo_red_dark"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="27dp"
+                android:ems="10"
+                android:hint="Type in the Location"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/search" />
+
+                <Button
+                    android:id="@+id/button_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/clear" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
